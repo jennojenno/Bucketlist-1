@@ -4,8 +4,33 @@
 
 
 .todo_form {
-	border: 1px solid black;
-	width: 300px;
+	border-left: 1px dotted #cc9999;
+	border-right: 1px dotted #cc9999;
+	width: 276px;
 	float: right;
 	background-color: white;
+	margin: 5px auto;
+
+}
+
+h3 {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+font-size: 1.1em;
+width: 82%;
+background-color: #ffff99;
+padding: 7px;
+font-style: italic;
+
+}
+
+.field {
+	text-align: left;
+	margin: 10px;
+	margin-left: 20px;
+font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+font-size: 0.9em;
+}
+
+#todotitle {
+	background-color: #ccffff;
 }

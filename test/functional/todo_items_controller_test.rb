@@ -37,6 +37,10 @@ end
 
 		end
 	end
+
+	context "POST to create" do 
+		setup do 
+			xhr :post, :create, :todo_item => {:name => "Drink pickleback", :location => "618 Grand St"}
 end
 
 

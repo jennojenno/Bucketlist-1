@@ -1,16 +1,10 @@
-<div id = "main">
+<% @destinations.each do |d| %>
 
-<%= render 'destinations/destination' %>
-<% @items.each do |item| %>
-
-	<h2><%= render item %></h2>
-
-<% end %>
-
-</div>
+  <%= render d %>
 
 
-<%= render 'todo_items/form' %>
+
+  <% end %>
 
 
 
@@ -28,9 +22,9 @@ function initialize() {
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
          var marker = new google.maps.Marker({
-        	position: new google.maps.LatLng(40.7399977, -73.9900966),
-        	map: map,
-        	title: "hello world"
+          position: new google.maps.LatLng(40.7399977, -73.9900966),
+          map: map,
+          title: "hello world"
        });
         //     <% TodoItem.all.each do |item| %>
         // addMarker(<%=item.latitude%>, <%=item.longitude%>, '<%=item.name%>');
@@ -42,4 +36,8 @@ function initialize() {
 
 </script>
 
+<div id = "form_map">
+
 <div id = "map-canvas"/>
+</div>
+</div> 
