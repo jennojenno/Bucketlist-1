@@ -6,19 +6,18 @@
 
 div.comment{
 	width: 200px;
-	height:50px;
 	// margin: 0 auto;
 
 	color: purple; 
-	border-width: 3px;
-	border-style: solid;
-	border-color: #00aedb;
-	border-radius: 6px;
+
 	padding: 5px;
 	padding-left: 10px;
 	font-family: arial;
-	margin: 5px;
-	margin-left: 0px;
+	margin-bottom: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	text-align: left;
 }
 
 div#main {

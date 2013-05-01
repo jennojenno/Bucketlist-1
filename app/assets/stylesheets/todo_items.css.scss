@@ -6,8 +6,8 @@
 .todo_form {
 	border-left: 1px dotted #cc9999;
 	border-right: 1px dotted #cc9999;
-	width: 276px;
-	float: right;
+	width: 290px;
+	float: center;
 	background-color: white;
 	margin: 5px auto;
 
@@ -33,4 +33,16 @@ font-size: 0.9em;
 
 #todotitle {
 	background-color: #ccffff;
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#todolocation {
+	font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+	color: #333366;
+	position: relative;
+	top: -17px;
+
+	text-align: center;
 }
