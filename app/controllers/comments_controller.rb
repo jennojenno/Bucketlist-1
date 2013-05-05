@@ -12,14 +12,14 @@ def create
 	@comment = Comment.new(params[:comment])
 	@comment.save!
 	
-
-	respond_to do |format|
-		format.html do 
-			render :partial => 'comments/comment', :locals => { :comment => @comment }, 
-			:content_type => 'text/html'#<== same thing as render @comment 
-		end
+	render @comment 
+	# respond_to do |format|
+	# 	format.html do 
+	# 		render :partial => 'comments/comment', :locals => { :comment => @comment }, 
+	# 		:content_type => 'text/html'#<== same thing as render @comment 
+	# 	end
 	
-	end
+	# end
 	#render :template => 'comments/create', :locals => { :comment => @comment }, 
 	#:content_type => 'text/javascript'
 end

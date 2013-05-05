@@ -10,8 +10,7 @@ div.comment{
 
 	color: purple; 
 
-	padding: 5px;
-	padding-left: 10px;
+
 	font-family: arial;
 	margin-bottom: 7px;
 	margin-left: auto;
@@ -26,4 +25,12 @@ div#main {
 	color: #333333;
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 	margin: 5px;
+}
+
+#displaycomments {
+	display: none;
+}
+
+h4 {
+	font-size: 1em;
 }

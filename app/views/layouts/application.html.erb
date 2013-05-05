@@ -5,10 +5,32 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+ 
+<div class="googlemaps">
+ 
+  <script type = "text/javascript" src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyAoHOlOfMj0OZwKxPVRrfmqVuqnesDIRaU&sensor=false">
+  </script>
+ 
+  
+  <script type="text/javascript">
+ 
+      $(function() {
+      initMap();
+ 
+      //add here var items that converts ToDoItems to JSON, take out the var to make to global
+      items = <%=raw(TodoItem.all.to_json) %>
+ 
+      <% TodoItem.all.each do |item| %>
+      addMarker(<%=item.latitude%>, <%=item.longitude%>, '<%=item.name%>');
+      <%end%>
+     });
+     </script>
+</div>
+     
 </head>
 <body>
-
+ 
 <%= yield %>
-
+ 
 </body>
 </html>

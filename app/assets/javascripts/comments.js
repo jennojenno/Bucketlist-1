@@ -9,4 +9,22 @@ var itemId = $('<div>').append(data).children().first().data("item-id");
 $('.comments-' + itemId).append(data);
 });
 
+
+
+$('h4#commenti').click(function() {
+	console.log("Clik");
+	// $(this).next().find('#todoforms').slideToggle();
+  $('div#displaycomments').slideToggle('slow', function() {
+    // Animation complete.
+  });
+});
+
+});
+
+
+$('h3#addcomment').click(function() {
+	console.log("Clik");
+  $('.new-comment').slideToggle('slow', function() {
+    // Animation complete.
+  });
 });
