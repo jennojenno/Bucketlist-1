@@ -11,7 +11,7 @@ $('.comments-' + itemId).append(data);
 
 
 
-$('h4#commenti').click(function() {
+$('h2#todotitle').click(function() {
 	console.log("Clik");
 	// $(this).next().find('#todoforms').slideToggle();
   $('div#displaycomments').slideToggle('slow', function() {
@@ -23,8 +23,8 @@ $('h4#commenti').click(function() {
 
 
 $('h3#addcomment').click(function() {
-	console.log("Clik");
-  $('.new-comment').slideToggle('slow', function() {
+	console.log("Clikafssd");
+  $('div#addc').slideToggle('slow', function() {
     // Animation complete.
   });
 });
