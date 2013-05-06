@@ -14,15 +14,12 @@ class TodoItemsController < ApplicationController
 		@item.save!
 
 		render @item
-
-    # respond_to do |format|
-    #   if @item.save
-    #     format.html { redirect_to @item, notice: 'item was successfully created.' }
-    #     format.json { render json: @item, status: :created, location: @item }
-    #   else
-    #     format.html { render action: "new" }
-    #     format.json { render json: @item.errors, status: :unprocessable_entity }
-    #   end
-    # end
   end
+
+
+  def like
+  	todo_item = TodoItem.find(params[:id])
+  	Like.create(:todo_item_id => todo_item.id, :user => User.first)
+  end 
+
 end

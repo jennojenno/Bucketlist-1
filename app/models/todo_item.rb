@@ -8,6 +8,7 @@ class TodoItem < ActiveRecord::Base
 
   has_many :comments
   belongs_to :destination
+  belongs_to :user
 
   def geocoding_method
   	"#{self.location} #{destination.name}"
